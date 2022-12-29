@@ -9,10 +9,9 @@ function LoginScreen() {
     }
     return (
         <div>
-            
             <h1>Notiice</h1>
             <h5>Manage anything and everything in one place</h5>
-            <button onClick={handleSubmit}>Log in with Google</button>
+            <button class="googleButton" onClick={handleSubmit}>Log in with Google</button>
         </div>
     );
 }

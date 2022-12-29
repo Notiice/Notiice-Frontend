@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
 
 function Home(props) {
 
@@ -8,16 +9,13 @@ function Home(props) {
 
     const user = JSON.parse(localStorage.getItem('user'));
 
-    const logout = (event) => {
-        localStorage.removeItem('token');
-        localStorage.removeItem('user');
-        window.location.reload();
-    }
     return (
         <div>
-            <h1>Home</h1>
-            <h4>Hello {user.username}</h4>
-            <button onClick={logout}>Logout</button>
+            <Navbar/>
+            <div>
+                <h1>Home</h1>
+                <h4>Hello {user.username}</h4>
+            </div>
         </div>
     );
 }

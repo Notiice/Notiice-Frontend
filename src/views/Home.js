@@ -1,5 +1,9 @@
 import React from 'react';
+import Calendar from '../components/Calendar/Calendar';
 import Navbar from '../components/Navbar';
+import Notes from '../components/Notes/Notes';
+
+import './Home.scss';
 
 function Home(props) {
 
@@ -7,16 +11,14 @@ function Home(props) {
         window.location.href = '/login';
     }
 
-    const user = JSON.parse(localStorage.getItem('user'));
-
     return (
-        <div>
+        <>
             <Navbar/>
-            <div>
-                <h1>Home</h1>
-                <h4>Hello {user.username}</h4>
+            <div className='feature-container' >
+                <Notes />
+                <Calendar />
             </div>
-        </div>
+        </>
     );
 }
 

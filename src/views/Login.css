@@ -16,7 +16,10 @@
     border: none;
     color: white;
     padding: 20px 50px;
+    height: 24px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+
 }

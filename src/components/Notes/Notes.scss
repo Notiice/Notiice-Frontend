@@ -1,0 +1,17 @@
+.notes-container {
+    width: 50%;
+    border-right: 5px blue solid;
+    height: 100%;
+    .notes-header {
+
+    }
+}
+
+.notes-inline-editor {
+    height: 95%;
+    max-height: 95%;
+    .quill {
+        height: 95%;
+        max-height: 95%;
+    }
+}

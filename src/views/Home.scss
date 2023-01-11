@@ -1,3 +1,7 @@
+*, ::after, ::before {
+    box-sizing: unset !important;
+}
+
 .feature-container {
     border: 5px blue solid;
     height: calc(100% - 74px);

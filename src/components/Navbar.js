@@ -14,7 +14,7 @@ function Navbar() {
         <div className='navbar'>
             <div className='navbar_logo'>Notiice</div>
             <div className='navbar_links'>
-                Logged in as {user.username}&nbsp;&nbsp;
+                {/* Logged in as {user.username}&nbsp;&nbsp; */}
                 <button onClick={logout}>Logout</button>
             </div>
         </div>

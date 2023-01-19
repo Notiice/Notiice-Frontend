@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './Chat.scss';
-import { Button, Offcanvas } from 'react-bootstrap';
+import { Button, InputGroup, Offcanvas } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Screen from '../img/whatsup.png';
 
 function Chat() {
 
@@ -22,11 +23,12 @@ function Chat() {
             </Button>
 
             <Offcanvas show={showChat} onHide={closeChat} className="chat_offcanva">
-                <Offcanvas.Header closeButton>
+                <Offcanvas.Header>
                     <Offcanvas.Title>Whatsapp</Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    <iframe src="https://web.whatsapp.com" title="Whatsapp Web" height="99%" width="100%"></iframe>
+                    {/* <iframe src="https://web.whatsapp.com" title="Whatsapp Web" height="99%" width="100%"></iframe> */}
+                    <img draggable={false} src={Screen}></img>
                 </Offcanvas.Body>
             </Offcanvas>
         </>
